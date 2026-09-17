@@ -1,0 +1,30 @@
+# Virtual Environment
+venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+
+# Heavy Datasets (Keep folders, ignore contents)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.h5
+*.hdf5
+*.dat
+*.hea
+*.zip
+
+# Checkpoints & Large Models
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+
+# OS & Editor Artifacts
+.vscode/
+.idea/
+.DS_Store
+*.log
+lightning_logs/
