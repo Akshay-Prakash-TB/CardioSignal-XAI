@@ -1,0 +1,374 @@
+{
+  "CardioSignal-CrossAttn": {
+    "name": "CardioSignal-CrossAttn (Flagship)",
+    "family": "Attention & Recurrent",
+    "parameters": 244709,
+    "checkpoint_size_mb": 2.85,
+    "latency_ms": 4.26,
+    "macro_auroc": 0.9053,
+    "macro_auprc": 0.7575,
+    "macro_f1": 0.6678,
+    "macro_sensitivity": 0.6305,
+    "macro_specificity": 0.925,
+    "brier_score": 0.0907,
+    "hamming_loss": 0.1246,
+    "subset_accuracy": 0.6033,
+    "per_class": {
+      "NORM": {
+        "AUROC": 0.9446,
+        "AUPRC": 0.9214,
+        "F1": 0.8598,
+        "Precision": 0.8077,
+        "Sensitivity": 0.9191,
+        "Specificity": 0.8297,
+        "BrierScore": 0.0938
+      },
+      "MI": {
+        "AUROC": 0.9162,
+        "AUPRC": 0.8044,
+        "F1": 0.6695,
+        "Precision": 0.7975,
+        "Sensitivity": 0.5769,
+        "Specificity": 0.9509,
+        "BrierScore": 0.1014
+      },
+      "STTC": {
+        "AUROC": 0.931,
+        "AUPRC": 0.8126,
+        "F1": 0.7319,
+        "Precision": 0.7838,
+        "Sensitivity": 0.6864,
+        "Specificity": 0.9411,
+        "BrierScore": 0.0865
+      },
+      "CD": {
+        "AUROC": 0.9172,
+        "AUPRC": 0.8129,
+        "F1": 0.7373,
+        "Precision": 0.7479,
+        "Sensitivity": 0.7269,
+        "Specificity": 0.9284,
+        "BrierScore": 0.0865
+      },
+      "HYP": {
+        "AUROC": 0.8177,
+        "AUPRC": 0.4361,
+        "F1": 0.3404,
+        "Precision": 0.5664,
+        "Sensitivity": 0.2433,
+        "Specificity": 0.9747,
+        "BrierScore": 0.0852
+      }
+    }
+  },
+  "ResNet1D-18": {
+    "name": "ResNet1D-18 Multimodal",
+    "family": "Residual CNN",
+    "parameters": 2233701,
+    "checkpoint_size_mb": 25.68,
+    "latency_ms": 5.51,
+    "macro_auroc": 0.8693,
+    "macro_auprc": 0.6991,
+    "macro_f1": 0.5501,
+    "macro_sensitivity": 0.5167,
+    "macro_specificity": 0.921,
+    "brier_score": 0.1093,
+    "hamming_loss": 0.1437,
+    "subset_accuracy": 0.5697,
+    "per_class": {
+      "NORM": {
+        "AUROC": 0.9296,
+        "AUPRC": 0.8979,
+        "F1": 0.84,
+        "Precision": 0.756,
+        "Sensitivity": 0.945,
+        "Specificity": 0.7627,
+        "BrierScore": 0.1218
+      },
+      "MI": {
+        "AUROC": 0.8629,
+        "AUPRC": 0.7034,
+        "F1": 0.65,
+        "Precision": 0.6963,
+        "Sensitivity": 0.6094,
+        "Specificity": 0.9109,
+        "BrierScore": 0.1226
+      },
+      "STTC": {
+        "AUROC": 0.9061,
+        "AUPRC": 0.7697,
+        "F1": 0.6696,
+        "Precision": 0.7932,
+        "Sensitivity": 0.5793,
+        "Specificity": 0.953,
+        "BrierScore": 0.1024
+      },
+      "CD": {
+        "AUROC": 0.8705,
+        "AUPRC": 0.7508,
+        "F1": 0.591,
+        "Precision": 0.8615,
+        "Sensitivity": 0.4498,
+        "Specificity": 0.9789,
+        "BrierScore": 0.107
+      },
+      "HYP": {
+        "AUROC": 0.7773,
+        "AUPRC": 0.3737,
+        "F1": 0.0,
+        "Precision": 0.0,
+        "Sensitivity": 0.0,
+        "Specificity": 0.9995,
+        "BrierScore": 0.0926
+      }
+    }
+  },
+  "InceptionTime-BiGRU": {
+    "name": "InceptionTime-BiGRU",
+    "family": "Multi-Scale & Recurrent",
+    "parameters": 379621,
+    "checkpoint_size_mb": 4.42,
+    "latency_ms": 18.64,
+    "macro_auroc": 0.8732,
+    "macro_auprc": 0.6912,
+    "macro_f1": 0.5011,
+    "macro_sensitivity": 0.4817,
+    "macro_specificity": 0.9251,
+    "brier_score": 0.112,
+    "hamming_loss": 0.1516,
+    "subset_accuracy": 0.5315,
+    "per_class": {
+      "NORM": {
+        "AUROC": 0.926,
+        "AUPRC": 0.8891,
+        "F1": 0.8371,
+        "Precision": 0.7608,
+        "Sensitivity": 0.9305,
+        "Specificity": 0.7724,
+        "BrierScore": 0.1149
+      },
+      "MI": {
+        "AUROC": 0.8614,
+        "AUPRC": 0.699,
+        "F1": 0.2888,
+        "Precision": 0.9048,
+        "Sensitivity": 0.1718,
+        "Specificity": 0.9939,
+        "BrierScore": 0.1553
+      },
+      "STTC": {
+        "AUROC": 0.9189,
+        "AUPRC": 0.764,
+        "F1": 0.7314,
+        "Precision": 0.7212,
+        "Sensitivity": 0.7419,
+        "Specificity": 0.9107,
+        "BrierScore": 0.0941
+      },
+      "CD": {
+        "AUROC": 0.8808,
+        "AUPRC": 0.7329,
+        "F1": 0.6482,
+        "Precision": 0.7615,
+        "Sensitivity": 0.5643,
+        "Specificity": 0.9484,
+        "BrierScore": 0.1047
+      },
+      "HYP": {
+        "AUROC": 0.779,
+        "AUPRC": 0.3711,
+        "F1": 0.0,
+        "Precision": 0.0,
+        "Sensitivity": 0.0,
+        "Specificity": 1.0,
+        "BrierScore": 0.0909
+      }
+    }
+  },
+  "ECG-ViT-Gated": {
+    "name": "ECG-ViT Gated Transformer",
+    "family": "Transformer / ViT",
+    "parameters": 558149,
+    "checkpoint_size_mb": 6.47,
+    "latency_ms": 2.6,
+    "macro_auroc": 0.8374,
+    "macro_auprc": 0.6257,
+    "macro_f1": 0.4957,
+    "macro_sensitivity": 0.4492,
+    "macro_specificity": 0.9212,
+    "brier_score": 0.1189,
+    "hamming_loss": 0.169,
+    "subset_accuracy": 0.4753,
+    "per_class": {
+      "NORM": {
+        "AUROC": 0.9068,
+        "AUPRC": 0.8618,
+        "F1": 0.8044,
+        "Precision": 0.7714,
+        "Sensitivity": 0.8402,
+        "Specificity": 0.8063,
+        "BrierScore": 0.1216
+      },
+      "MI": {
+        "AUROC": 0.8068,
+        "AUPRC": 0.5608,
+        "F1": 0.3071,
+        "Precision": 0.6529,
+        "Sensitivity": 0.2007,
+        "Specificity": 0.9642,
+        "BrierScore": 0.1467
+      },
+      "STTC": {
+        "AUROC": 0.8944,
+        "AUPRC": 0.7168,
+        "F1": 0.6587,
+        "Precision": 0.6845,
+        "Sensitivity": 0.6348,
+        "Specificity": 0.9089,
+        "BrierScore": 0.1077
+      },
+      "CD": {
+        "AUROC": 0.8067,
+        "AUPRC": 0.635,
+        "F1": 0.5734,
+        "Precision": 0.6833,
+        "Sensitivity": 0.494,
+        "Specificity": 0.9331,
+        "BrierScore": 0.127
+      },
+      "HYP": {
+        "AUROC": 0.7721,
+        "AUPRC": 0.3541,
+        "F1": 0.1351,
+        "Precision": 0.6061,
+        "Sensitivity": 0.076,
+        "Specificity": 0.9933,
+        "BrierScore": 0.0914
+      }
+    }
+  },
+  "DenseNet1D-SE": {
+    "name": "DenseNet1D-SE Attention",
+    "family": "Dense & Channel Attention",
+    "parameters": 102674,
+    "checkpoint_size_mb": 1.26,
+    "latency_ms": 3.95,
+    "macro_auroc": 0.8744,
+    "macro_auprc": 0.7027,
+    "macro_f1": 0.5853,
+    "macro_sensitivity": 0.5278,
+    "macro_specificity": 0.9333,
+    "brier_score": 0.1027,
+    "hamming_loss": 0.1402,
+    "subset_accuracy": 0.5461,
+    "per_class": {
+      "NORM": {
+        "AUROC": 0.93,
+        "AUPRC": 0.9018,
+        "F1": 0.8371,
+        "Precision": 0.8054,
+        "Sensitivity": 0.8714,
+        "Specificity": 0.8362,
+        "BrierScore": 0.1054
+      },
+      "MI": {
+        "AUROC": 0.8729,
+        "AUPRC": 0.706,
+        "F1": 0.6059,
+        "Precision": 0.7207,
+        "Sensitivity": 0.5226,
+        "Specificity": 0.9321,
+        "BrierScore": 0.1206
+      },
+      "STTC": {
+        "AUROC": 0.9149,
+        "AUPRC": 0.778,
+        "F1": 0.6827,
+        "Precision": 0.7517,
+        "Sensitivity": 0.6252,
+        "Specificity": 0.9357,
+        "BrierScore": 0.0977
+      },
+      "CD": {
+        "AUROC": 0.8773,
+        "AUPRC": 0.7623,
+        "F1": 0.652,
+        "Precision": 0.8318,
+        "Sensitivity": 0.5361,
+        "Specificity": 0.9683,
+        "BrierScore": 0.0989
+      },
+      "HYP": {
+        "AUROC": 0.777,
+        "AUPRC": 0.3655,
+        "F1": 0.1486,
+        "Precision": 0.6667,
+        "Sensitivity": 0.0837,
+        "Specificity": 0.9943,
+        "BrierScore": 0.0909
+      }
+    }
+  },
+  "Baseline-CNN1D": {
+    "name": "Baseline 1D-CNN",
+    "family": "Baseline CNN",
+    "parameters": 72453,
+    "checkpoint_size_mb": 0.86,
+    "latency_ms": 1.67,
+    "macro_auroc": 0.8804,
+    "macro_auprc": 0.709,
+    "macro_f1": 0.5608,
+    "macro_sensitivity": 0.5281,
+    "macro_specificity": 0.9278,
+    "brier_score": 0.1023,
+    "hamming_loss": 0.1428,
+    "subset_accuracy": 0.5452,
+    "per_class": {
+      "NORM": {
+        "AUROC": 0.9309,
+        "AUPRC": 0.9008,
+        "F1": 0.8356,
+        "Precision": 0.8062,
+        "Sensitivity": 0.8672,
+        "Specificity": 0.8378,
+        "BrierScore": 0.1046
+      },
+      "MI": {
+        "AUROC": 0.8751,
+        "AUPRC": 0.7146,
+        "F1": 0.5842,
+        "Precision": 0.7117,
+        "Sensitivity": 0.4955,
+        "Specificity": 0.9327,
+        "BrierScore": 0.119
+      },
+      "STTC": {
+        "AUROC": 0.9196,
+        "AUPRC": 0.7674,
+        "F1": 0.7319,
+        "Precision": 0.7018,
+        "Sensitivity": 0.7648,
+        "Specificity": 0.8988,
+        "BrierScore": 0.0966
+      },
+      "CD": {
+        "AUROC": 0.8919,
+        "AUPRC": 0.7557,
+        "F1": 0.6223,
+        "Precision": 0.8294,
+        "Sensitivity": 0.498,
+        "Specificity": 0.9701,
+        "BrierScore": 0.1014
+      },
+      "HYP": {
+        "AUROC": 0.7844,
+        "AUPRC": 0.4064,
+        "F1": 0.0299,
+        "Precision": 0.8,
+        "Sensitivity": 0.0152,
+        "Specificity": 0.9995,
+        "BrierScore": 0.0898
+      }
+    }
+  }
+}

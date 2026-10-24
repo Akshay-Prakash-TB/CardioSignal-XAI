@@ -1,0 +1,7 @@
+Model,Family,Macro AUROC,Macro AUPRC,Macro F1,Sensitivity,Specificity,Brier Score,Latency (ms),Params,Size (MB)
+CardioSignal-CrossAttn,Attention & Recurrent,0.9053,0.7575,0.6678,0.6305,0.9250,0.0907,4.26,"244,709",2.8
+Baseline-CNN1D,Baseline CNN,0.8804,0.7090,0.5608,0.5281,0.9278,0.1023,1.67,"72,453",0.9
+DenseNet1D-SE,Dense & Channel Attention,0.8744,0.7027,0.5853,0.5278,0.9333,0.1027,3.95,"102,674",1.3
+InceptionTime-BiGRU,Multi-Scale & Recurrent,0.8732,0.6912,0.5011,0.4817,0.9251,0.1120,18.64,"379,621",4.4
+ResNet1D-18,Residual CNN,0.8693,0.6991,0.5501,0.5167,0.9210,0.1093,5.51,"2,233,701",25.7
+ECG-ViT-Gated,Transformer / ViT,0.8374,0.6257,0.4957,0.4492,0.9212,0.1189,2.60,"558,149",6.5

@@ -29,7 +29,7 @@ class PTBXLDataset(Dataset):
             
         real_idx = self.indices[idx]
         
-        # Shape: (Channels=12, Length=1000) for 1D-CNN
+        # Shape: (Channels=12, Length=1000) for 1D models
         ecg = self.ecg_signals[real_idx].T.astype(np.float32)
         meta = self.metadata[real_idx].astype(np.float32)
         label = self.labels[real_idx].astype(np.float32)
@@ -41,11 +41,12 @@ class PTBXLDataset(Dataset):
         }
 
 class PTBXLDataModule(pl.LightningDataModule):
-    def __init__(self, h5_path="data/processed/ptbxl_preprocessed.h5", batch_size=64, num_workers=2):
+    def __init__(self, h5_path="data/processed/ptbxl_preprocessed.h5", batch_size=64, num_workers=0):
         super().__init__()
         self.h5_path = h5_path
         self.batch_size = batch_size
         self.num_workers = num_workers
+        self.pin_memory = torch.cuda.is_available()
 
     def setup(self, stage=None):
         # Folds 1-8: Train, Fold 9: Validation, Fold 10: Held-out Test
@@ -54,10 +55,10 @@ class PTBXLDataModule(pl.LightningDataModule):
         self.test_dataset = PTBXLDataset(self.h5_path, fold_indices=[10])
 
     def train_dataloader(self):
-        return DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=True, num_workers=self.num_workers, pin_memory=True)
+        return DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=True, num_workers=self.num_workers, pin_memory=self.pin_memory)
 
     def val_dataloader(self):
-        return DataLoader(self.val_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers, pin_memory=True)
+        return DataLoader(self.val_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers, pin_memory=self.pin_memory)
 
     def test_dataloader(self):
-        return DataLoader(self.test_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers, pin_memory=True)
+        return DataLoader(self.test_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers, pin_memory=self.pin_memory)

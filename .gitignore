@@ -28,3 +28,4 @@ checkpoints/
 .DS_Store
 *.log
 lightning_logs/
+logs/
